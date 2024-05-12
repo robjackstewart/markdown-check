@@ -12,6 +12,6 @@ jobs:
         with:
           dotnet-version: '8.0.x'
       - name: Format
-        run: dotnet format markdown-check.sln
+        run: dotnet format --verify-no-changes markdown-check.sln
       - name: Build Solution
         run: dotnet build markdown-check.sln
